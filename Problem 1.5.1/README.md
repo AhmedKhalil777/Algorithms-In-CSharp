@@ -29,3 +29,5 @@
   - let s\` and i\` be the values of s and i when at the top of the loop
   - so s\`` and i\`` after going around again
   - so $ s' =\sum_{j=1}^{i'} j  $
+  - The code gives that s'' = i' +s' and i'' = i' + 1
+  - Together these give t
