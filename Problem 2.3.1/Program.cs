@@ -8,5 +8,10 @@ namespace Problem_2._3._1
         {
             Console.WriteLine("Hello World!");
         }
+
+
+        static void Partistion2{
+            
+        }
     }
 }

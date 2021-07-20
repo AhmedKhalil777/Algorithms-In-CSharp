@@ -1,22 +1,23 @@
 ﻿
 using System;
-string screenInput = "Input : ";
-string screenOutput = "Output : ";
+using static System.Console;
+string screenInput = "";
+string screenOutput = "";
 int accum, current;
 accum = current = 0;
 while (true){ 
 
-    var c = Console.ReadLine();
+    var c = ReadLine();
     if(char.IsNumber(c[0]))
     {
         current = 10 * current + int.Parse(c[0].ToString());
-        screenInput = current.ToString();
-        screenOutput =  current.ToString();
+        screenInput =  current.ToString();
+        screenOutput =  accum.ToString();
     }
     else if (c[0] == '+')
     {
-        screenInput = "Input : ";
-        accum = accum + current;
+        screenInput = "";
+        accum +=  current;
         current = 0;
         screenOutput = accum.ToString();
     }
@@ -26,7 +27,7 @@ while (true){
         screenOutput = "Output: 0";
         screenInput = "Input : ";
     }
-    Console.Clear();
-    Console.WriteLine(screenInput);
-    Console.WriteLine(screenOutput);
+    Clear();
+    WriteLine("Input: "+ screenInput);
+    WriteLine("OutPut : "+ screenOutput);
 }
